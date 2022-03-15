@@ -1,0 +1,15 @@
+// Custom properties
+@import './abstracts/variables';
+@import './abstracts/functions';
+@import './abstracts/mixins';
+
+@import './base/reset';
+@import 'base/typography';
+
+@import './layout/header';
+@import './layout/footer';
+
+@import './components/buttons';
+@import './components/card-home';
+
+@import 'pages/home';
