@@ -160,4 +160,8 @@ button {
   background: none;
 }
 
+.home .back-btn {
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */
