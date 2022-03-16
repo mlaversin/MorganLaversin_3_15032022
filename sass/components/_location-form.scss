@@ -1,0 +1,26 @@
+
+.location-search {
+    background-color: $clr-bg-regular;
+}
+
+.location-form {
+    width: 52%;
+    margin: 0 auto;
+    @include flex-row;
+    color: $clr-bg-dark;
+    padding: 1rem 0;
+
+    &__label {
+        width: 20%;
+        text-align: center;
+        font-size: $fs-400;
+    }
+
+    &__input{
+        width: 80%;
+        padding-left: 0.2rem;
+        color: $clr-bg-dark;
+        font-weight: $fw-bold;
+        font-size: $fs-400;
+    }
+}
