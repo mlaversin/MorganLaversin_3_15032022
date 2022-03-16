@@ -1,0 +1,10 @@
+.primary-btn {
+    padding: 1.1rem 1.5rem;
+    margin: 1rem 0;
+
+    color: white;
+    background: linear-gradient(170deg, $clr-secondary, $clr-primary);
+
+    border-radius: 9999px;
+    @include box-shadow(0px, 5px, 10px, #ccc);
+}
