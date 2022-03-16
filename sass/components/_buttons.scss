@@ -5,12 +5,19 @@
     background: linear-gradient(170deg, $clr-secondary, $clr-primary);
     border-radius: 9999px;
     color: white;
-    @include box-shadow(0px, 5px, 10px, #ccc);
+    @include box-shadow(0px, 5px, 10px, #999);
     
     transition: all 150ms ease-in;
     
     &:hover {
         background: linear-gradient(170deg, $clr-secondary-light, $clr-primary-light);
-        @include box-shadow(0px, 8px, 15px, #aaa);
+        color: white;
+        @include box-shadow(0px, 8px, 15px, #999);
+    }
+    &:focus {
+        color: white;
+    }
+    &:active {
+        color: white;
     }
 }

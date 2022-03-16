@@ -35,6 +35,7 @@ a:hover,
 a:focus,
 a:active {
   text-decoration: none;
+  color: black;
 }
 
 :root {
@@ -82,16 +83,23 @@ header {
   background: linear-gradient(170deg, #FF79DA, #9356dc);
   border-radius: 9999px;
   color: white;
-  -webkit-box-shadow: 0px 5px 10px #ccc;
-  -moz-box-shadow: 0px 5px 10px #ccc;
-  box-shadow: 0px 5px 10px #ccc;
+  -webkit-box-shadow: 0px 5px 10px #999;
+  -moz-box-shadow: 0px 5px 10px #999;
+  box-shadow: 0px 5px 10px #999;
   transition: all 150ms ease-in;
 }
 .primary-btn:hover {
   background: linear-gradient(170deg, #ff93e1, #a16be0);
-  -webkit-box-shadow: 0px 8px 15px #aaa;
-  -moz-box-shadow: 0px 8px 15px #aaa;
-  box-shadow: 0px 8px 15px #aaa;
+  color: white;
+  -webkit-box-shadow: 0px 8px 15px #999;
+  -moz-box-shadow: 0px 8px 15px #999;
+  box-shadow: 0px 8px 15px #999;
+}
+.primary-btn:focus {
+  color: white;
+}
+.primary-btn:active {
+  color: white;
 }
 
 .location-search {
@@ -145,6 +153,69 @@ header {
   padding: 1.2rem 0;
   font-size: 1.125rem;
   font-weight: 300;
+}
+
+.step-section {
+  padding: 1rem;
+}
+.step-section h2 {
+  padding-top: 2rem;
+}
+.step-section .step-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.2rem;
+  padding-bottom: 2rem;
+}
+
+.step-item {
+  width: 90%;
+  margin: 0.6rem 0 0.6rem 1rem;
+  padding: 1.8rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #F6F6F6;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 3px 6px #ccc;
+  -moz-box-shadow: 0px 3px 6px #ccc;
+  box-shadow: 0px 3px 6px #ccc;
+}
+.step-item__number {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #9356dc;
+  border-radius: 50%;
+  color: white;
+  font-size: 0.875rem;
+}
+.step-item__logo {
+  color: rgba(0, 0, 0, 0.5);
+}
+.step-item__text {
+  padding-left: 1.5rem;
+  font-weight: 600;
+}
+
+.step-item-highlight {
+  background-color: #f2eafb;
+}
+.step-item-highlight .step-item__logo {
+  color: #9356dc;
+}
+
+.rest-section {
+  background-color: #F6F6F6;
 }
 
 /*# sourceMappingURL=style.css.map */

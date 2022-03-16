@@ -3,7 +3,6 @@
 }
 
 // Hero
-
 .hero {
     background-color: $clr-bg-light;
     padding: 2.5rem 0;
@@ -25,4 +24,66 @@
         font-size: $fs-500;
         font-weight: $fw-light;
     }
+}
+
+// Step section
+.step-section {
+    padding: 1rem;
+
+    h2 {
+        padding-top: 2rem ;
+    }
+
+    .step-container {
+        @include flex-col;
+        padding-top: 1.2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+.step-item {
+    width: 90%;
+    margin: 0.6rem 0 0.6rem 1rem;
+    padding: 1.8rem;
+    position: relative;
+    @include flex-row;
+    justify-content: flex-start;
+    background-color: $clr-bg-light;
+    border-radius: 1rem;
+    @include box-shadow;
+
+    &__number {
+        @include flex-col;
+        position: absolute;
+        left: -1rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: $clr-primary;
+        border-radius: 50%;
+        color: white;
+        font-size: $fs-300;
+    }
+
+    &__logo {
+        color: rgb(0, 0, 0, 0.5);
+    }
+
+    &__text {
+        padding-left: 1.5rem;
+        font-weight: $fw-bold;
+    }
+}
+
+.step-item-highlight {
+    background-color: lighten($clr-primary, 35%);
+
+    .step-item__logo {
+        color: $clr-primary;
+    }
+}
+
+
+// restaurant section
+.rest-section {
+    background-color: $clr-bg-light;
 }
