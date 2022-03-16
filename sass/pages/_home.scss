@@ -6,10 +6,12 @@
     background-color: $clr-bg-regular;
 }
 
+
 .location-form {
     width: 50%;
     margin: 0 auto;
     @include flex-row;
+    
     
     color: $clr-bg-dark;
     font-size: $fs-600;
