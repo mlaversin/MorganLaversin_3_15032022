@@ -1,0 +1,29 @@
+.footer {
+    padding: 1.6rem;
+    background-color: $clr-bg-dark;
+    color: $clr-bg-light;
+
+    &__container {
+        padding-bottom: 0.3rem;
+    }
+
+    &__logo {
+        padding-bottom: 1.3rem;
+        font-size: $fs-500;
+    }
+
+    &__links li {
+        padding: 0.3rem 0;
+        font-size: $fs-400;
+    }
+
+    &__links i {
+        font-size: $fs-200;
+        padding-right: 0.4rem;
+    }
+}
+
+.footer__links li:nth-child(3),
+.footer__links li:last-child {
+    font-weight: $fw-light;
+}

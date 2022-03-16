@@ -35,7 +35,7 @@ a:hover,
 a:focus,
 a:active {
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 
 :root {
@@ -58,7 +58,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h1 {
+h1, .footer__logo {
   font-family: "Shrikhand", "Roboto", sans-serif;
 }
 
@@ -75,6 +75,32 @@ header {
   font-weight: 500;
   font-size: 30px;
   color: black;
+}
+
+.footer {
+  padding: 1.6rem;
+  background-color: #353535;
+  color: #F6F6F6;
+}
+.footer__container {
+  padding-bottom: 0.3rem;
+}
+.footer__logo {
+  padding-bottom: 1.3rem;
+  font-size: 1.125rem;
+}
+.footer__links li {
+  padding: 0.3rem 0;
+  font-size: 1rem;
+}
+.footer__links i {
+  font-size: 0.75rem;
+  padding-right: 0.4rem;
+}
+
+.footer__links li:nth-child(3),
+.footer__links li:last-child {
+  font-weight: 300;
 }
 
 .primary-btn {
@@ -132,6 +158,15 @@ header {
 .rest-card {
   position: relative;
   margin: 1rem 0;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 5px 10px #999;
+  -moz-box-shadow: 0px 5px 10px #999;
+  box-shadow: 0px 5px 10px #999;
+}
+.rest-card:hover {
+  -webkit-box-shadow: 0px 8px 15px #999;
+  -moz-box-shadow: 0px 8px 15px #999;
+  box-shadow: 0px 8px 15px #999;
 }
 .rest-card__image {
   height: 11rem;
@@ -153,7 +188,7 @@ header {
   padding-bottom: 0.5rem;
 }
 .rest-card__new-flag {
-  padding: 0.6rem 0.8rem 0.4rem;
+  padding: 0.5rem 0.8rem 0.4rem;
   position: absolute;
   top: 0.9rem;
   right: 0.7rem;
@@ -258,7 +293,7 @@ header {
 
 .rest-section {
   padding: 1.2rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 3rem;
   background-color: #F6F6F6;
 }
 .rest-section h2 {
