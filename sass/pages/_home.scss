@@ -1,89 +1,92 @@
 .home .back-btn {
-    display: none;
+  display: none;
 }
 
 // Hero
 .hero {
-    background-color: $clr-bg-light;
-    padding: 2.5rem 0;
-    text-align: center;
+  background-color: $clr-bg-light;
+  padding: 2.5rem 0;
+  text-align: center;
 
-    &__wrapper {
-        @include flex-col;
-        width: 85%;
-        margin: 0 auto;
-    }
+  &__wrapper {
+    @include flex-col;
+    width: 85%;
+    margin: 0 auto;
+  }
 
-    &__title {
-        padding: 0 1rem;
-        line-height: 1.8rem;
-    }
+  &__title {
+    padding: 0 1rem;
+    line-height: 1.8rem;
+  }
 
-    &__text {
-        padding: 1.2rem 0;
-        font-size: $fs-500;
-        font-weight: $fw-light;
-    }
+  &__text {
+    padding: 1.2rem 0;
+    font-size: $fs-500;
+    font-weight: $fw-light;
+  }
 }
 
 // Step section
 .step-section {
-    padding: 1rem;
+  padding: 1rem;
 
-    h2 {
-        padding-top: 2rem ;
-    }
+  h2 {
+    padding-top: 2rem;
+  }
 
-    .step-container {
-        @include flex-col;
-        padding-top: 1.2rem;
-        padding-bottom: 2rem;
-    }
+  .step-container {
+    @include flex-col;
+    padding-top: 1.2rem;
+    padding-bottom: 2rem;
+  }
 }
 
 .step-item {
-    width: 90%;
-    margin: 0.6rem 0 0.6rem 1rem;
-    padding: 1.8rem;
-    position: relative;
-    @include flex-row;
-    justify-content: flex-start;
-    background-color: $clr-bg-light;
-    border-radius: 1rem;
-    @include box-shadow;
+  width: 90%;
+  margin: 0.6rem 0 0.6rem 1rem;
+  padding: 1.8rem;
+  position: relative;
+  @include flex-row;
+  justify-content: flex-start;
+  background-color: $clr-bg-light;
+  border-radius: 1rem;
+  @include box-shadow;
+  transition: all 150ms ease-in;
 
-    &__number {
-        @include flex-col;
-        position: absolute;
-        left: -1rem;
-        width: 1.5rem;
-        height: 1.5rem;
-        background-color: $clr-primary;
-        border-radius: 50%;
-        color: white;
-        font-size: $fs-300;
-    }
+  &__number {
+    @include flex-col;
+    position: absolute;
+    left: -1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: $clr-primary;
+    border-radius: 50%;
+    color: white;
+    font-size: $fs-300;
+  }
 
-    &__logo {
-        color: rgb(0, 0, 0, 0.5);
-    }
+  &__logo {
+    color: rgb(0, 0, 0, 0.5);
+  }
 
-    &__text {
-        padding-left: 1.5rem;
-        font-weight: $fw-bold;
-    }
+  &__text {
+    padding-left: 1.5rem;
+    font-weight: $fw-bold;
+  }
 }
 
-.step-item-highlight {
-    background-color: lighten($clr-primary, 35%);
+.step-item:hover,
+.step-item:focus,
+.step:active {
+  background-color: lighten($clr-primary, 35%);
+  outline: none;
 
-    .step-item__logo {
-        color: $clr-primary;
-    }
+  .step-item__logo {
+    color: $clr-primary;
+  }
 }
-
 
 // restaurant section
 .rest-section {
-    background-color: $clr-bg-light;
+  background-color: $clr-bg-light;
 }
