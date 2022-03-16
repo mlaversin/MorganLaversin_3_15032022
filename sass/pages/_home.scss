@@ -1,3 +1,30 @@
 .home .back-btn {
     display: none;
 }
+
+.location-search {
+    background-color: $clr-bg-regular;
+}
+
+.location-form {
+    width: 50%;
+    margin: 0 auto;
+    @include flex-row;
+    
+    color: $clr-bg-dark;
+    font-size: $fs-600;
+    font-weight: $fw-bold;
+
+    &__label {
+        width: 15%;
+        padding: 1rem;
+    }
+
+    &__input{
+        width: 85%;
+        padding: 1.5rem 0.8rem;
+        color: $clr-bg-dark;
+        font-size: $fs-600;
+        font-weight: $fw-bold;
+    }
+}

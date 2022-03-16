@@ -4,12 +4,13 @@
 @import './abstracts/mixins';
 
 @import './base/reset';
-@import 'base/typography';
+@import './base/base';
+@import './base/typography';
 
 @import './layout/header';
 @import './layout/footer';
 
 @import './components/buttons';
-@import './components/card-home';
+@import './components/rest-card';
 
-@import 'pages/home';
+@import './pages/home';
