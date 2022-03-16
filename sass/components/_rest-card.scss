@@ -1,0 +1,39 @@
+.rest-card {
+    position: relative;
+    margin: 1rem 0;
+
+    &__image {
+        height: 11rem;
+    }
+
+    &__image img {
+        height: 100%;
+        object-fit: cover;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+
+    &__body {
+        position: relative;
+        padding: 1rem;
+        background-color: white;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+
+    &__title {
+        padding-bottom: 0.5rem;
+    }
+
+    &__new-flag {
+        padding: 0.6rem 0.8rem 0.4rem;
+        position: absolute;
+        top: 0.9rem;
+        right: 0.7rem;
+        background-color: $clr-tertiary;
+        border-radius: 0.1rem;
+        color: #00876c;
+        font-size: $fs-300;
+        font-weight: $fw-bold;
+    }
+}
