@@ -7,5 +7,6 @@ This third project of my training program consists in turning a mock-up into a w
 ## Technical specifications :
 
 - Mobile first workflow
-- Using SASS
+- Using SASS preprocessor
+- Using BEM methodology
 - The code must be valid to W3C HTML and CSS validators
