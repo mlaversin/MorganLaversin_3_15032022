@@ -3,9 +3,12 @@
     margin: 1rem 0;
     border-radius: 1rem;
     @include box-shadow(0px, 5px, 10px, #999);
+    transition: all 150ms ease-in;
+    z-index: 0;
 
     &:hover {
         @include box-shadow(0px, 8px, 15px, #999);
+        transform: scale(1.005);
     }
 
     &__image {
@@ -20,7 +23,8 @@
     }
 
     &__body {
-        position: relative;
+        @include flex-row;
+        justify-content: space-between;
         padding: 1rem;
         background-color: white;
         border-bottom-left-radius: 1rem;
@@ -41,5 +45,12 @@
         color: #00876c;
         font-size: $fs-300;
         font-weight: $fw-bold;
+    }
+
+    &__btn-container {
+        position: absolute;
+        bottom: 1.5rem;
+        right: 1.5rem;
+        @include flex-row;
     }
 }
