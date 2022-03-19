@@ -24,9 +24,9 @@
 
 
 
-<body class="home">
+<body class="homepage">
 
-  <div class="loader-container">
+  <!-- <div class="loader-container">
     <div class="loader">
       <div></div>
       <div></div>
@@ -41,10 +41,12 @@
       <div></div>
       <div></div>
     </div>
-  </div>
+  </div> -->
 
   <header class="primary-header">
-    <h1 class="header-logo">ohmyfood</h1>
+    <a href="./index.html">
+      <h1 class="header-logo">ohmyfood</h1>
+    </a>
     <a class="back-btn" href="index.html">
       <i class="fa-solid fa-arrow-left"></i>
     </a>
@@ -52,7 +54,7 @@
 
 
 
-  <main>
+  <main class="home-main">
     <div class="location-search">
       <form class="location-form">
         <label class="location-form__label" for="location">
@@ -78,8 +80,8 @@
 
 
     <section class="step-section">
-      <h2>Fonctionnement</h2>
-      <div class="step-container">
+      <h2 class="step-section-title">Fonctionnement</h2>
+      <div class="step-items-container">
 
         <a class="step-item" href="#rest-section">
           <div class="step-item__number">1</div>
@@ -121,114 +123,119 @@
 
     <section id="rest-section" class="rest-section">
 
-      <h2>Restaurants</h2>
+      <h2 class="rest-section-title">Restaurants</h2>
 
-      <article class="rest-card">
-        <a href="./la_palette_du_gout.html">
-          <div class="rest-card__container">
-            <div class="rest-card__image">
-              <img src="./img/restaurants/palette-gout-480w.jpg" alt="un plat du restaurant la palette du goût">
-              <div class="rest-card__new-flag">Nouveau</div>
-            </div>
-            <div class="rest-card__body">
-              <div class="rest-card__text">
-                <h3 class="rest-card__title">
-                  La palette du goût
-                </h3>
-                <p class="rest-card__location">
-                  Ménilmontant
-                </p>
+      <div class="rest-cards-container">
+
+        <article class="rest-card">
+          <a href="./la_palette_du_gout.html">
+            <div class="rest-card__container">
+              <div class="rest-card__image">
+                <img src="./img/restaurants/palette-gout-480w.jpg" alt="un plat du restaurant la palette du goût">
+                <div class="rest-card__new-flag">Nouveau</div>
               </div>
+              <div class="rest-card__body">
+                <div class="rest-card__text">
+                  <h3 class="rest-card__title">
+                    La palette du goût
+                  </h3>
+                  <p class="rest-card__location">
+                    Ménilmontant
+                  </p>
+                </div>
 
-            </div>
-          </div>
-        </a>
-        <div class="rest-card__btn-container">
-          <div class="favorite-btn">
-            <i class="fa-regular fa-heart favorite-btn__icon favorite-btn__icon--unchecked"></i>
-            <i class="fa-solid fa-heart favorite-btn__icon favorite-btn__icon--checked"></i>
-          </div>
-        </div>
-      </article>
-
-      <article class="rest-card">
-        <a href="./la_note_enchantee.html">
-          <div class="rest-card__wrapper">
-            <div class="rest-card__image">
-              <img src="./img/restaurants/note-enchantee-480w.jpg" alt="un plat du restaurant la note enchantée">
-              <div class="rest-card__new-flag">Nouveau</div>
-            </div>
-            <div class="rest-card__body">
-              <div class="rest-card__text">
-                <h3 class="rest-card__title">
-                  La note enchantée
-                </h3>
-                <p class="rest-card__location">
-                  Charonne
-                </p>
               </div>
             </div>
-          </div>
-        </a>
-        <div class="rest-card__btn-container">
-          <div class="favorite-btn">
-            <i class="fa-regular fa-heart favorite-btn__icon favorite-btn__icon--unchecked"></i>
-            <i class="fa-solid fa-heart favorite-btn__icon favorite-btn__icon--checked"></i>
-          </div>
-        </div>
-      </article>
-
-      <article class="rest-card">
-        <a href="./a_la_francaise.html">
-          <div class="rest-card__wrapper">
-            <div class="rest-card__image">
-              <img src="./img/restaurants/a-la-francaise-480w.jpg" alt="un plat du restaurant à la française">
+          </a>
+          <div class="rest-card__btn-container">
+            <div class="favorite-btn">
+              <i class="fa-regular fa-heart favorite-btn__icon favorite-btn__icon--unchecked"></i>
+              <i class="fa-solid fa-heart favorite-btn__icon favorite-btn__icon--checked"></i>
             </div>
-            <div class="rest-card__body">
-              <div class="rest-card__text">
-                <h3 class="rest-card__title">
-                  À la française
-                </h3>
-                <p class="rest-card__location">
-                  Cité Rouge
-                </p>
+          </div>
+        </article>
+
+        <article class="rest-card">
+          <a href="./la_note_enchantee.html">
+            <div class="rest-card__wrapper">
+              <div class="rest-card__image">
+                <img src="./img/restaurants/note-enchantee-480w.jpg" alt="un plat du restaurant la note enchantée">
+                <div class="rest-card__new-flag">Nouveau</div>
+              </div>
+              <div class="rest-card__body">
+                <div class="rest-card__text">
+                  <h3 class="rest-card__title">
+                    La note enchantée
+                  </h3>
+                  <p class="rest-card__location">
+                    Charonne
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        </a>
-        <div class="rest-card__btn-container">
-          <div class="favorite-btn">
-            <i class="fa-regular fa-heart favorite-btn__icon favorite-btn__icon--unchecked"></i>
-            <i class="fa-solid fa-heart favorite-btn__icon favorite-btn__icon--checked"></i>
-          </div>
-        </div>
-      </article>
-
-      <article class="rest-card">
-        <a href="./le_delice_des_sens.html">
-          <div class="rest-card__wrapper">
-            <div class="rest-card__image">
-              <img src="./img/restaurants/palette-gout-480w.jpg" alt="un plat du restaurant le délice des sens">
+          </a>
+          <div class="rest-card__btn-container">
+            <div class="favorite-btn">
+              <i class="fa-regular fa-heart favorite-btn__icon favorite-btn__icon--unchecked"></i>
+              <i class="fa-solid fa-heart favorite-btn__icon favorite-btn__icon--checked"></i>
             </div>
-            <div class="rest-card__body">
-              <div class="rest-card__text">
-                <h3 class="rest-card__title">
-                  Le délice des sens
-                </h3>
-                <p class="rest-card__location">
-                  Folie-Méricourt
-                </p>
+          </div>
+        </article>
+
+        <article class="rest-card">
+          <a href="./a_la_francaise.html">
+            <div class="rest-card__wrapper">
+              <div class="rest-card__image">
+                <img src="./img/restaurants/a-la-francaise-480w.jpg" alt="un plat du restaurant à la française">
+              </div>
+              <div class="rest-card__body">
+                <div class="rest-card__text">
+                  <h3 class="rest-card__title">
+                    À la française
+                  </h3>
+                  <p class="rest-card__location">
+                    Cité Rouge
+                  </p>
+                </div>
               </div>
             </div>
+          </a>
+          <div class="rest-card__btn-container">
+            <div class="favorite-btn">
+              <i class="fa-regular fa-heart favorite-btn__icon favorite-btn__icon--unchecked"></i>
+              <i class="fa-solid fa-heart favorite-btn__icon favorite-btn__icon--checked"></i>
+            </div>
           </div>
-        </a>
-        <div class="rest-card__btn-container">
-          <div class="favorite-btn">
-            <i class="fa-regular fa-heart favorite-btn__icon favorite-btn__icon--unchecked"></i>
-            <i class="fa-solid fa-heart favorite-btn__icon favorite-btn__icon--checked"></i>
+        </article>
+
+        <article class="rest-card">
+          <a href="./le_delice_des_sens.html">
+            <div class="rest-card__wrapper">
+              <div class="rest-card__image">
+                <img src="./img/restaurants/palette-gout-480w.jpg" alt="un plat du restaurant le délice des sens">
+              </div>
+              <div class="rest-card__body">
+                <div class="rest-card__text">
+                  <h3 class="rest-card__title">
+                    Le délice des sens
+                  </h3>
+                  <p class="rest-card__location">
+                    Folie-Méricourt
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <div class="rest-card__btn-container">
+            <div class="favorite-btn">
+              <i class="fa-regular fa-heart favorite-btn__icon favorite-btn__icon--unchecked"></i>
+              <i class="fa-solid fa-heart favorite-btn__icon favorite-btn__icon--checked"></i>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
+
+
+      </div>
 
     </section>
 

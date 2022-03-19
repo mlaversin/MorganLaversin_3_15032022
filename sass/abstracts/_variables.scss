@@ -1,14 +1,14 @@
 // Color
 $clr-primary: #9356dc;
-$clr-secondary: #FF79DA;
+$clr-secondary: #ff79da;
 $clr-tertiary: #98e2cf;
 
-$clr-primary-light: lighten($clr-primary,5%);
-$clr-secondary-light: lighten($clr-secondary,5%);
+$clr-primary-light: lighten($clr-primary, 5%);
+$clr-secondary-light: lighten($clr-secondary, 5%);
 
 $clr-bg-dark: #353535;
-$clr-bg-regular: #EAEAEA;
-$clr-bg-light: #F6F6F6;
+$clr-bg-regular: #eaeaea;
+$clr-bg-light: #f6f6f6;
 
 // Font family
 $ff-logo: "Shrikhand", "Roboto", sans-serif;
@@ -28,3 +28,8 @@ $fs-200: 0.75rem;
 $fw-light: 300;
 $fw-regular: 400;
 $fw-bold: 600;
+
+// Breakpoints
+$mobilelg: 576;
+$tablet: 768;
+$desktop: 1024;

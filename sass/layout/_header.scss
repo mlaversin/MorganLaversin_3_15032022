@@ -1,13 +1,17 @@
 .primary-header {
-  @include box-shadow(0px, 3px, 3px, #ccc);
   position: relative;
 }
 
+.homepage .primary-header {
+  @include box-shadow(0px, 3px, 3px, #ccc);
+}
+
 .header-logo {
+  width: 12rem;
+  margin: 0 auto;
   padding: 1.3rem 0 0.8rem;
   text-align: center;
   font-weight: 500;
   font-size: 30px;
   color: black;
 }
-

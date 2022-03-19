@@ -1,0 +1,47 @@
+.step-item {
+  width: calc(100% - 0.8rem);
+  max-width: 20rem;
+  margin: 0.6rem 0 0.6rem 1rem;
+  padding: 1.8rem 0.5rem 1.8rem 1.8rem;
+  position: relative;
+  @include flex-row;
+  justify-content: flex-start;
+  background-color: $clr-bg-light;
+  border-radius: 1rem;
+  @include box-shadow;
+  transition: all 150ms ease-in;
+
+  &__number {
+    @include flex-col;
+    position: absolute;
+    left: -0.8rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: $clr-primary;
+    border-radius: 50%;
+    color: white;
+    font-size: $fs-300;
+  }
+
+  &__logo {
+    color: rgb(0, 0, 0, 0.5);
+  }
+
+  &__text {
+    padding-left: 1.5rem;
+    font-weight: $fw-bold;
+  }
+}
+
+// Hover / Clic effect
+
+.step-item:hover,
+.step-item:focus,
+.step:active {
+  background-color: lighten($clr-primary, 35%);
+  outline: none;
+
+  .step-item__logo {
+    color: $clr-primary;
+  }
+}
