@@ -108,6 +108,18 @@ h1, .footer__logo {
   font-weight: 300;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    text-align: center;
+  }
+
+  .footer__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+  }
+}
 .loader-container {
   position: fixed;
   width: 100%;
@@ -449,6 +461,12 @@ h1, .footer__logo {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .rest-card {
+    margin: 0;
+    min-width: 20rem;
+  }
+}
 
 .homepage .back-btn {
   display: none;
@@ -541,7 +559,18 @@ h1, .footer__logo {
   margin: 0 auto;
   max-width: 24rem;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
+  .rest-section .rest-cards-container {
+    max-width: 45rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
+@media screen and (min-width: 1440px) {
   .rest-section .rest-cards-container {
     max-width: unset;
   }

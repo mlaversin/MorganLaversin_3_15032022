@@ -53,4 +53,9 @@
         right: 1.5rem;
         @include flex-row;
     }
+
+    @include mq(tablet) {
+        margin: 0;
+        min-width: 20rem;
+    }
 }

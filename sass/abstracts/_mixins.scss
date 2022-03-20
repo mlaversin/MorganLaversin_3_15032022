@@ -33,4 +33,9 @@
       @content;
     }
   }
+  @if ($size == desktoplg) {
+    @media screen and (min-width: #{$desktoplg}px) {
+      @content;
+    }
+  }
 }
