@@ -484,6 +484,7 @@ h1, .footer__logo {
   -moz-box-shadow: -2px 4px 8px 4px rgba(2, 1, 1, 0.04);
   box-shadow: -2px 4px 8px 4px rgba(2, 1, 1, 0.04);
   overflow: hidden;
+  cursor: pointer;
   animation: itemAppearance 1000ms ease-out both;
 }
 .menu-item:first-child {
@@ -493,6 +494,8 @@ h1, .footer__logo {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 100%;
+  transition: margin-right 400ms ease-in-out;
 }
 .menu-item__title {
   padding-bottom: 0.5rem;
@@ -508,13 +511,41 @@ h1, .footer__logo {
   text-overflow: ellipsis;
 }
 .menu-item__price {
+  padding: 2rem 0 0.6rem 2rem;
   align-self: flex-end;
-  font-size: 0.938rem;
+  font-size: 1rem;
   font-weight: 600;
-  border: 1px solid red;
+  transition: transform 400ms ease-in-out;
 }
 .menu-item__checked {
-  display: none;
+  display: grid;
+  place-items: center;
+  width: 3.6rem;
+  height: 100%;
+  position: absolute;
+  right: -3.6rem;
+  top: 0;
+  background-color: #98e2cf;
+  transform: translateX(0);
+  transition: transform 400ms ease-in-out;
+}
+.menu-item__checked i {
+  color: white;
+  font-size: 1.4rem;
+  transform: rotate(-360deg);
+  transition: transform 400ms ease-in-out;
+}
+.menu-item:hover .menu-item__designation {
+  margin-right: 3rem;
+}
+.menu-item:hover .menu-item__price {
+  transform: translateX(-3.6rem);
+}
+.menu-item:hover .menu-item__checked {
+  transform: translateX(-3.6rem);
+}
+.menu-item:hover .menu-item__checked i {
+  transform: rotate(0deg);
 }
 .menu-item__1 {
   animation-delay: 0ms;

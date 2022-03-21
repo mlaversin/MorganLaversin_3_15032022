@@ -8,6 +8,7 @@
   border-radius: 1rem;
   @include box-shadow(-2px, 4px, 8px, 4px, rgba(2, 1, 1, 0.04));
   overflow: hidden;
+  cursor: pointer;
 
   &:first-child {
     margin-top: 1.5rem;
@@ -15,6 +16,8 @@
 
   &__designation {
     @include word-ellipsis;
+    width: 100%;
+    transition: margin-right 400ms ease-in-out;
   }
 
   &__title {
@@ -29,14 +32,46 @@
   }
 
   &__price {
+    padding: 2rem 0 0.6rem 2rem;
     align-self: flex-end;
-    font-size: $fs-300;
+    font-size: $fs-400;
     font-weight: $fw-bold;
-    border: 1px solid red;
+    transition: transform 400ms ease-in-out;
   }
 
   &__checked {
-    display: none;
+    display: grid;
+    place-items: center;
+    width: 3.6rem;
+    height: 100%;
+    position: absolute;
+    right: -3.6rem;
+    top: 0;
+    background-color: $clr-tertiary;
+    transform: translateX(0);
+    transition: transform 400ms ease-in-out;
+
+    i {
+      color: white;
+      font-size: 1.4rem;
+      transform: rotate(-360deg);
+      transition: transform 400ms ease-in-out;
+    }
+  }
+
+  &:hover {
+    .menu-item__designation {
+      margin-right: 3rem;
+    }
+    .menu-item__price {
+      transform: translateX(-3.6rem);
+    }
+    .menu-item__checked {
+      transform: translateX(-3.6rem);
+    }
+    .menu-item__checked i {
+      transform: rotate(0deg);
+    }
   }
 
   animation: itemAppearance 1000ms ease-out both;
