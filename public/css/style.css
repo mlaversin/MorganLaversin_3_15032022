@@ -476,9 +476,10 @@ h1, .footer__logo {
   padding: 0.9rem 0.7rem 0.8rem;
   background-color: white;
   border-radius: 1rem;
-  -webkit-box-shadow: -2px 4px 8px 4px rgba(0, 0, 0, 0.04);
-  -moz-box-shadow: -2px 4px 8px 4px rgba(0, 0, 0, 0.04);
-  box-shadow: -2px 4px 8px 4px rgba(0, 0, 0, 0.04);
+  -webkit-box-shadow: -2px 4px 8px 4px rgba(2, 1, 1, 0.04);
+  -moz-box-shadow: -2px 4px 8px 4px rgba(2, 1, 1, 0.04);
+  box-shadow: -2px 4px 8px 4px rgba(2, 1, 1, 0.04);
+  animation: appearance 1000ms ease-out both;
 }
 .menu-item:first-child {
   margin-top: 1.5rem;
@@ -500,7 +501,50 @@ h1, .footer__logo {
 .menu-item__checked {
   display: none;
 }
+.menu-item__1 {
+  animation-delay: 0ms;
+}
+.menu-item__2 {
+  animation-delay: 150ms;
+}
+.menu-item__3 {
+  animation-delay: 300ms;
+}
+.menu-item__4 {
+  animation-delay: 450ms;
+}
+.menu-item__5 {
+  animation-delay: 600ms;
+}
+.menu-item__6 {
+  animation-delay: 750ms;
+}
+.menu-item__7 {
+  animation-delay: 900ms;
+}
+.menu-item__8 {
+  animation-delay: 1050ms;
+}
+.menu-item__9 {
+  animation-delay: 1200ms;
+}
+.menu-item__10 {
+  animation-delay: 1350ms;
+}
 
+@keyframes appearance {
+  0% {
+    opacity: 0;
+    transform: translateY(0.8rem);
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
 .homepage .back-btn {
   display: none;
 }

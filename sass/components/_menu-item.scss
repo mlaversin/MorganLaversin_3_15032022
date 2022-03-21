@@ -4,8 +4,7 @@
   padding: 0.9rem 0.7rem 0.8rem;
   background-color: white;
   border-radius: 1rem;
-
-  @include box-shadow(-2px, 4px, 8px, 4px, rgba(0, 0, 0, 0.04));
+  @include box-shadow(-2px, 4px, 8px, 4px, rgba(2, 1, 1, 0.04));
 
   &:first-child {
     margin-top: 1.5rem;
@@ -30,5 +29,27 @@
 
   &__checked {
     display: none;
+  }
+
+  animation: appearance 1000ms ease-out both;
+
+  @for $i from 1 to 11 {
+    &__#{$i} {
+      animation-delay: 150ms * ($i - 1);
+    }
+  }
+}
+
+@keyframes appearance {
+  0% {
+    opacity: 0;
+    transform: translateY(0.8rem);
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
   }
 }
