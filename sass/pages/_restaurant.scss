@@ -5,7 +5,7 @@
 
 .menu {
   position: relative;
-  padding: 2.4rem 1.2rem;
+  padding: 2.4rem 0.8rem;
   position: relative;
   top: -3.5rem;
   margin-bottom: -3.5rem;
@@ -14,6 +14,7 @@
   border-top-right-radius: 2.4rem;
 
   &__title {
+    padding-left: 0.4rem;
     font-size: $fs-800;
     font-weight: 500;
   }
@@ -32,5 +33,20 @@
 }
 
 .menu-step-title {
-  padding-top: 2.5rem;
+  position: relative;
+  padding-top: 2.4rem;
+  margin-left: 0.4rem;
+  text-transform: uppercase;
+  font-size: $fs-400;
+  font-weight: $fw-regular;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.6rem;
+    height: 0.2rem;
+    width: 2.5rem;
+    background-color: $clr-tertiary;
+  }
 }

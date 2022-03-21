@@ -67,9 +67,9 @@ h1, .footer__logo {
 }
 
 .homepage .primary-header {
-  -webkit-box-shadow: 0px 3px 3px #ccc;
-  -moz-box-shadow: 0px 3px 3px #ccc;
-  box-shadow: 0px 3px 3px #ccc;
+  -webkit-box-shadow: 0px 3px 3px #ccc #ccc;
+  -moz-box-shadow: 0px 3px 3px #ccc #ccc;
+  box-shadow: 0px 3px 3px #ccc #ccc;
 }
 
 .header-logo {
@@ -99,7 +99,7 @@ h1, .footer__logo {
   font-size: 1rem;
 }
 .footer__links i {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   padding-right: 0.4rem;
 }
 
@@ -267,18 +267,18 @@ h1, .footer__logo {
   background: linear-gradient(350deg, #9356dc, #ff79da);
   border-radius: 9999px;
   color: white;
-  -webkit-box-shadow: 0px 5px 10px #999;
-  -moz-box-shadow: 0px 5px 10px #999;
-  box-shadow: 0px 5px 10px #999;
+  -webkit-box-shadow: 0px 5px 10px 0px #999;
+  -moz-box-shadow: 0px 5px 10px 0px #999;
+  box-shadow: 0px 5px 10px 0px #999;
   outline: none;
   transition: all 150ms ease-in;
 }
 .primary-btn:hover, .primary-btn:focus, .primary-btn:active {
   background: linear-gradient(170deg, #ff93e1, #a16be0);
   color: white;
-  -webkit-box-shadow: 0px 8px 15px #999;
-  -moz-box-shadow: 0px 8px 15px #999;
-  box-shadow: 0px 8px 15px #999;
+  -webkit-box-shadow: 0px 8px 15px 0px #999;
+  -moz-box-shadow: 0px 8px 15px 0px #999;
+  box-shadow: 0px 8px 15px 0px #999;
 }
 
 .favorite-btn {
@@ -365,9 +365,9 @@ h1, .footer__logo {
   justify-content: flex-start;
   background-color: #f6f6f6;
   border-radius: 1rem;
-  -webkit-box-shadow: 0px 3px 6px #ccc;
-  -moz-box-shadow: 0px 3px 6px #ccc;
-  box-shadow: 0px 3px 6px #ccc;
+  -webkit-box-shadow: 0px 3px 6px 0px #ccc;
+  -moz-box-shadow: 0px 3px 6px 0px #ccc;
+  box-shadow: 0px 3px 6px 0px #ccc;
   transition: all 150ms ease-in;
 }
 .step-item__number {
@@ -382,7 +382,7 @@ h1, .footer__logo {
   background-color: #9356dc;
   border-radius: 50%;
   color: white;
-  font-size: 0.875rem;
+  font-size: 0.938rem;
 }
 .step-item__logo {
   color: rgba(0, 0, 0, 0.5);
@@ -408,16 +408,16 @@ h1, .footer__logo {
   position: relative;
   margin: 1rem 0;
   border-radius: 1rem;
-  -webkit-box-shadow: 0px 5px 10px #999;
-  -moz-box-shadow: 0px 5px 10px #999;
-  box-shadow: 0px 5px 10px #999;
+  -webkit-box-shadow: 0px 5px 10px 0px #999;
+  -moz-box-shadow: 0px 5px 10px 0px #999;
+  box-shadow: 0px 5px 10px 0px #999;
   transition: all 150ms ease-in;
   z-index: 0;
 }
 .rest-card:hover {
-  -webkit-box-shadow: 0px 8px 15px #999;
-  -moz-box-shadow: 0px 8px 15px #999;
-  box-shadow: 0px 8px 15px #999;
+  -webkit-box-shadow: 0px 8px 15px 0px #999;
+  -moz-box-shadow: 0px 8px 15px 0px #999;
+  box-shadow: 0px 8px 15px 0px #999;
   transform: scale(1.005);
 }
 .rest-card__image {
@@ -450,7 +450,7 @@ h1, .footer__logo {
   background-color: #98e2cf;
   border-radius: 0.1rem;
   color: #00876c;
-  font-size: 0.875rem;
+  font-size: 0.938rem;
   font-weight: 600;
 }
 .rest-card__btn-container {
@@ -471,9 +471,32 @@ h1, .footer__logo {
 }
 
 .menu-item {
+  position: relative;
+  margin-top: 0.9rem;
+  padding: 0.9rem 0.7rem 0.8rem;
   background-color: white;
+  border-radius: 1rem;
+  -webkit-box-shadow: -2px 4px 8px 4px rgba(0, 0, 0, 0.04);
+  -moz-box-shadow: -2px 4px 8px 4px rgba(0, 0, 0, 0.04);
+  box-shadow: -2px 4px 8px 4px rgba(0, 0, 0, 0.04);
 }
-
+.menu-item:first-child {
+  margin-top: 1.5rem;
+}
+.menu-item__title {
+  padding-bottom: 0.5rem;
+  font-size: 1.125rem;
+}
+.menu-item__description {
+  font-size: 0.938rem;
+}
+.menu-item__price {
+  position: absolute;
+  bottom: 0.8rem;
+  right: 1.3rem;
+  font-size: 0.938rem;
+  font-weight: 600;
+}
 .menu-item__checked {
   display: none;
 }
@@ -593,7 +616,7 @@ h1, .footer__logo {
 
 .menu {
   position: relative;
-  padding: 2.4rem 1.2rem;
+  padding: 2.4rem 0.8rem;
   position: relative;
   top: -3.5rem;
   margin-bottom: -3.5rem;
@@ -602,6 +625,7 @@ h1, .footer__logo {
   border-top-right-radius: 2.4rem;
 }
 .menu__title {
+  padding-left: 0.4rem;
   font-size: 1.75rem;
   font-weight: 500;
 }
@@ -617,7 +641,21 @@ h1, .footer__logo {
 }
 
 .menu-step-title {
-  padding-top: 2.5rem;
+  position: relative;
+  padding-top: 2.4rem;
+  margin-left: 0.4rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.menu-step-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.6rem;
+  height: 0.2rem;
+  width: 2.5rem;
+  background-color: #98e2cf;
 }
 
 /*# sourceMappingURL=style.css.map */
