@@ -1,20 +1,21 @@
 // Custom properties
-@import './abstracts/variables';
-@import './abstracts/functions';
-@import './abstracts/mixins';
+@import "./abstracts/variables";
+@import "./abstracts/functions";
+@import "./abstracts/mixins";
 
-@import './base/reset';
-@import './base/base';
-@import './base/typography';
+@import "./base/reset";
+@import "./base/base";
+@import "./base/typography";
 
-@import './layout/header';
-@import './layout/footer';
+@import "./layout/header";
+@import "./layout/footer";
 
-@import './components/loader';
-@import './components/buttons';
-@import './components/location-form';
-@import './components/step-item';
-@import './components/rest-card';
+@import "./components/loader";
+@import "./components/buttons";
+@import "./components/location-form";
+@import "./components/step-item";
+@import "./components/rest-card";
+@import "./components/menu-item";
 
-@import './pages/home';
-@import './pages/restaurant';
+@import "./pages/home";
+@import "./pages/restaurant";
