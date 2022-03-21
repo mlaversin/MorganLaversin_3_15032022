@@ -258,7 +258,7 @@ h1, .footer__logo {
   left: 1.5rem;
 }
 .back-btn i {
-  font-size: 1.375rem;
+  font-size: 1.5rem;
 }
 
 .primary-btn {
@@ -293,7 +293,7 @@ h1, .footer__logo {
 }
 .favorite-btn__icon {
   position: absolute;
-  font-size: 1.375rem;
+  font-size: 1.5rem;
 }
 .favorite-btn__icon--unchecked {
   transform: scale(1);
@@ -471,6 +471,10 @@ h1, .footer__logo {
 }
 
 .menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   position: relative;
   margin-top: 0.9rem;
   padding: 0.9rem 0.7rem 0.8rem;
@@ -479,24 +483,35 @@ h1, .footer__logo {
   -webkit-box-shadow: -2px 4px 8px 4px rgba(2, 1, 1, 0.04);
   -moz-box-shadow: -2px 4px 8px 4px rgba(2, 1, 1, 0.04);
   box-shadow: -2px 4px 8px 4px rgba(2, 1, 1, 0.04);
-  animation: appearance 1000ms ease-out both;
+  overflow: hidden;
+  animation: itemAppearance 1000ms ease-out both;
 }
 .menu-item:first-child {
   margin-top: 1.5rem;
 }
+.menu-item__designation {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .menu-item__title {
   padding-bottom: 0.5rem;
   font-size: 1.125rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-item__description {
   font-size: 0.938rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-item__price {
-  position: absolute;
-  bottom: 0.8rem;
-  right: 1.3rem;
+  align-self: flex-end;
   font-size: 0.938rem;
   font-weight: 600;
+  border: 1px solid red;
 }
 .menu-item__checked {
   display: none;
@@ -532,7 +547,7 @@ h1, .footer__logo {
   animation-delay: 1350ms;
 }
 
-@keyframes appearance {
+@keyframes itemAppearance {
   0% {
     opacity: 0;
     transform: translateY(0.8rem);
@@ -673,10 +688,20 @@ h1, .footer__logo {
   font-size: 1.75rem;
   font-weight: 500;
 }
+@media screen and (max-width: 368px) {
+  .menu__title {
+    font-size: 1.5rem;
+  }
+}
 .menu__favorite-btn {
   position: absolute;
-  top: 2rem;
+  top: 2.2rem;
   right: 2rem;
+}
+@media screen and (max-width: 368px) {
+  .menu__favorite-btn {
+    top: 2rem;
+  }
 }
 .menu__order-btn {
   padding-top: 2rem;

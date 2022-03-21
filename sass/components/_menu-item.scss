@@ -1,37 +1,45 @@
 .menu-item {
+  @include flex-row;
+  justify-content: space-between;
   position: relative;
   margin-top: 0.9rem;
   padding: 0.9rem 0.7rem 0.8rem;
   background-color: white;
   border-radius: 1rem;
   @include box-shadow(-2px, 4px, 8px, 4px, rgba(2, 1, 1, 0.04));
+  overflow: hidden;
 
   &:first-child {
     margin-top: 1.5rem;
   }
 
+  &__designation {
+    @include word-ellipsis;
+  }
+
   &__title {
     padding-bottom: 0.5rem;
     font-size: $fs-500;
+    @include word-ellipsis;
   }
 
   &__description {
     font-size: 0.938rem;
+    @include word-ellipsis;
   }
 
   &__price {
-    position: absolute;
-    bottom: 0.8rem;
-    right: 1.3rem;
+    align-self: flex-end;
     font-size: $fs-300;
     font-weight: $fw-bold;
+    border: 1px solid red;
   }
 
   &__checked {
     display: none;
   }
 
-  animation: appearance 1000ms ease-out both;
+  animation: itemAppearance 1000ms ease-out both;
 
   @for $i from 1 to 11 {
     &__#{$i} {
@@ -40,7 +48,7 @@
   }
 }
 
-@keyframes appearance {
+@keyframes itemAppearance {
   0% {
     opacity: 0;
     transform: translateY(0.8rem);

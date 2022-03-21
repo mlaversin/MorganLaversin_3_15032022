@@ -11,12 +11,6 @@
   align-items: center;
 }
 
-@mixin box-shadow($top: 0px, $left: 3px, $blur: 6px, $spread:0px, $color: #ccc) {
-  -webkit-box-shadow: $top $left $blur $spread $color;
-  -moz-box-shadow: $top $left $blur $spread $color;
-  box-shadow: $top $left $blur $spread $color;
-}
-
 @mixin mq($size) {
   @if ($size == mobilelg) {
     @media screen and (min-width: #{$mobilelg}px) {
@@ -38,4 +32,22 @@
       @content;
     }
   }
+}
+
+@mixin box-shadow(
+  $top: 0px,
+  $left: 3px,
+  $blur: 6px,
+  $spread: 0px,
+  $color: #ccc
+) {
+  -webkit-box-shadow: $top $left $blur $spread $color;
+  -moz-box-shadow: $top $left $blur $spread $color;
+  box-shadow: $top $left $blur $spread $color;
+}
+
+@mixin word-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
