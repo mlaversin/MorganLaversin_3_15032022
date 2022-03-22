@@ -34,9 +34,9 @@
   &:focus,
   &:active {
     background: linear-gradient(
-      170deg,
-      $clr-secondary-light,
-      $clr-primary-light
+      350deg,
+      $clr-primary-light,
+      $clr-secondary-light
     );
     color: white;
     @include box-shadow(0px, 8px, 15px, 0px, #999);
