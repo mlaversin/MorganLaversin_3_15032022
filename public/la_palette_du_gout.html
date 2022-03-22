@@ -35,8 +35,12 @@
 
   <main class="restaurant-main">
 
-    <img class="restaurant-image" src="./img/restaurants/palette-gout-480w.jpg"
-      alt="un plat du restaurant la palette du goût">
+    <picture>
+      <source
+        srcset="./img/restaurants/palette-gout-480w.jpg 480w, ./img/restaurants/palette-gout-800w.jpg 800w, ./img/restaurants/palette-gout-1440w.jpg 1440w, ./img/restaurants/palette-gout-2000w.jpg 2000w">
+      <img class="restaurant-image" src="./img/restaurants/palette-gout-480w.jpg"
+        alt="un plat du restaurant la palette du goût">
+    </picture>
 
     <section class="menu">
 

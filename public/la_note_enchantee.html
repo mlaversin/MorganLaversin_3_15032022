@@ -35,8 +35,12 @@
 
   <main class="restaurant-main">
 
-    <img class="restaurant-image" src="./img/restaurants/note-enchantee-480w.jpg"
-      alt="un plat du restaurant la note enchantée">
+    <picture>
+      <source
+        srcset="./img/restaurants/note-enchantee-480w.jpg 480w, ./img/restaurants/note-enchantee-800w.jpg 800w, ./img/restaurants/note-enchantee-1440w.jpg 1440w, ./img/restaurants/note-enchantee-2000w.jpg 2000w">
+      <img class="restaurant-image" src="./img/restaurants/note-enchantee-480w.jpg"
+        alt="un plat du restaurant la note enchantée">
+    </picture>
 
     <section class="menu">
 
