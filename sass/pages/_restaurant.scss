@@ -6,12 +6,22 @@
 .menu {
   position: relative;
   padding: 2.4rem 0.8rem;
-  position: relative;
   top: -3.5rem;
   margin-bottom: -3.5rem;
   background-color: $clr-bg-light;
   border-top-left-radius: 2.4rem;
   border-top-right-radius: 2.4rem;
+
+  &__container {
+    margin: 0 auto;
+    position: relative;
+    max-width: 30rem;
+
+    @include mq(desktop) {
+      width: 90%;
+      max-width: unset;
+    }
+  }
 
   &__title {
     padding-left: 0.4rem;
@@ -25,8 +35,8 @@
 
   &__favorite-btn {
     position: absolute;
-    top: 2.2rem;
-    right: 2rem;
+    top: 0;
+    right: 0;
 
     @media screen and (max-width: 368px) {
       top: 2rem;
@@ -39,6 +49,8 @@
       place-items: center;
   }
 }
+
+
 
 .menu-step-title {
   position: relative;
@@ -56,5 +68,36 @@
     height: 0.2rem;
     width: 2.5rem;
     background-color: $clr-tertiary;
+  }
+}
+
+
+/* ******************************** */
+/*          Media Queries          */
+/* ******************************** */
+
+@include mq(mobilelg) {
+  .menu {
+    max-width: 36rem;
+    margin: 0 auto -3.5rem;
+  }
+}
+@include mq(desktop) {
+  .menu {
+    max-width: 53rem;
+  }
+  .menu__steps-container {
+    @include flex-row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  .menu-item {
+    width: 21.5rem;
+  }
+}
+@media screen and (min-width: 1291px) {
+  .menu {
+    max-width: 81rem;
   }
 }

@@ -67,9 +67,9 @@ h1, .footer__logo {
 }
 
 .homepage .primary-header {
-  -webkit-box-shadow: 0px 3px 3px #ccc #ccc;
-  -moz-box-shadow: 0px 3px 3px #ccc #ccc;
-  box-shadow: 0px 3px 3px #ccc #ccc;
+  -webkit-box-shadow: 0px 3px 3px 0px #ccc;
+  -moz-box-shadow: 0px 3px 3px 0px #ccc;
+  box-shadow: 0px 3px 3px 0px #ccc;
 }
 
 .header-logo {
@@ -250,6 +250,9 @@ h1, .footer__logo {
     visibility: hidden;
   }
 }
+/* ******************************** */
+/*           Back button           */
+/* ******************************** */
 .back-btn {
   width: 1rem;
   position: absolute;
@@ -261,6 +264,9 @@ h1, .footer__logo {
   font-size: 1.5rem;
 }
 
+/* ******************************** */
+/*         Primary section         */
+/* ******************************** */
 .primary-btn {
   padding: 1.1rem 1.5rem;
   margin: 1rem 0;
@@ -281,6 +287,9 @@ h1, .footer__logo {
   box-shadow: 0px 8px 15px 0px #999;
 }
 
+/* ******************************** */
+/*         Favorite button         */
+/* ******************************** */
 .favorite-btn {
   width: 2rem;
   height: 2rem;
@@ -355,7 +364,7 @@ h1, .footer__logo {
 
 .step-item {
   width: calc(100% - 0.8rem);
-  max-width: 20rem;
+  max-width: 17rem;
   margin: 0.6rem 0 0.6rem 1rem;
   padding: 1.8rem 0.5rem 1.8rem 1.8rem;
   position: relative;
@@ -418,7 +427,6 @@ h1, .footer__logo {
   -webkit-box-shadow: 0px 8px 15px 0px #999;
   -moz-box-shadow: 0px 8px 15px 0px #999;
   box-shadow: 0px 8px 15px 0px #999;
-  transform: scale(1.005);
 }
 .rest-card__image {
   height: 11rem;
@@ -595,10 +603,28 @@ h1, .footer__logo {
   display: none;
 }
 
+/* ******************************** */
+/*           Hero section           */
+/* ******************************** */
 .hero {
   background-color: #f6f6f6;
   padding: 2.5rem 0;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 3rem 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero {
+    padding: 4rem 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero {
+    padding: 5rem 0;
+  }
 }
 .hero__wrapper {
   display: flex;
@@ -617,6 +643,24 @@ h1, .footer__logo {
     width: 100%;
   }
 }
+@media screen and (min-width: 768px) {
+  .hero__title {
+    color: #f6f6f6;
+    padding: 0.5rem 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero__title {
+    font-size: 1.75rem;
+    padding: 1rem 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero__title {
+    font-size: 1.875rem;
+    padding: 1.5rem 0;
+  }
+}
 .hero__text {
   padding: 1.2rem 0;
   font-size: 1.125rem;
@@ -632,9 +676,64 @@ h1, .footer__logo {
     max-width: 20rem;
   }
 }
+@media screen and (min-width: 768px) {
+  .hero__text {
+    color: #f6f6f6;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero__text {
+    font-size: 1.25rem;
+    max-width: 28rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero__text {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)), url("../../public/img/hero/hero-800w.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)), url("../../public/img/hero/hero-1440w.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)), url("../../public/img/hero/hero-2200w.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+  }
+}
 
+@media screen and (min-width: 768px) {
+  .hero__btn,
+.hero__btn:hover {
+    box-shadow: none;
+  }
+}
+
+/* ******************************** */
+/*           Step section           */
+/* ******************************** */
 .step-section {
   padding: 1rem;
+}
+@media screen and (min-width: 1024px) {
+  .step-section {
+    padding: 3.5rem 1rem;
+  }
 }
 .step-section .step-section-title {
   align-self: flex-start;
@@ -660,14 +759,22 @@ h1, .footer__logo {
     flex-direction: row;
     max-width: 1340px;
     gap: 2rem;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 }
 
+/* ******************************** */
+/*       Restaurant section         */
+/* ******************************** */
 .rest-section {
   padding: 1.2rem;
   padding-bottom: 3rem;
   background-color: #f6f6f6;
+}
+@media screen and (min-width: 768px) {
+  .rest-section {
+    padding-bottom: 4rem;
+  }
 }
 .rest-section .rest-section-title {
   padding-top: 2.3rem;
@@ -707,12 +814,22 @@ h1, .footer__logo {
 .menu {
   position: relative;
   padding: 2.4rem 0.8rem;
-  position: relative;
   top: -3.5rem;
   margin-bottom: -3.5rem;
   background-color: #f6f6f6;
   border-top-left-radius: 2.4rem;
   border-top-right-radius: 2.4rem;
+}
+.menu__container {
+  margin: 0 auto;
+  position: relative;
+  max-width: 30rem;
+}
+@media screen and (min-width: 1024px) {
+  .menu__container {
+    width: 90%;
+    max-width: unset;
+  }
 }
 .menu__title {
   padding-left: 0.4rem;
@@ -726,8 +843,8 @@ h1, .footer__logo {
 }
 .menu__favorite-btn {
   position: absolute;
-  top: 2.2rem;
-  right: 2rem;
+  top: 0;
+  right: 0;
 }
 @media screen and (max-width: 368px) {
   .menu__favorite-btn {
@@ -756,6 +873,39 @@ h1, .footer__logo {
   height: 0.2rem;
   width: 2.5rem;
   background-color: #98e2cf;
+}
+
+/* ******************************** */
+/*          Media Queries          */
+/* ******************************** */
+@media screen and (min-width: 576px) {
+  .menu {
+    max-width: 36rem;
+    margin: 0 auto -3.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu {
+    max-width: 53rem;
+  }
+
+  .menu__steps-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+
+  .menu-item {
+    width: 21.5rem;
+  }
+}
+@media screen and (min-width: 1291px) {
+  .menu {
+    max-width: 81rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

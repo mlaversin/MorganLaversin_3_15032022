@@ -3,7 +3,7 @@
 }
 
 .homepage .primary-header {
-  @include box-shadow(0px, 3px, 3px, #ccc);
+  @include box-shadow(0px, 3px, 3px, 0px, #ccc);
 }
 
 .header-logo {
@@ -15,3 +15,4 @@
   font-size: $fs-900;
   color: black;
 }
+

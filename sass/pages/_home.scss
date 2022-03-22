@@ -2,11 +2,24 @@
   display: none;
 }
 
-// Hero
+/* ******************************** */
+/*           Hero section           */
+/* ******************************** */
+
 .hero {
   background-color: $clr-bg-light;
   padding: 2.5rem 0;
   text-align: center;
+
+  @include mq(tablet) {
+    padding: 3rem 0;
+  }
+  @include mq(desktop) {
+    padding: 4rem 0;
+  }
+  @include mq(desktoplg) {
+    padding: 5rem 0;
+  }
 
   &__wrapper {
     @include flex-col;
@@ -20,6 +33,19 @@
 
     @media screen and (min-width: 500px) {
       width: 100%;
+    }
+
+    @include mq(tablet) {
+      color: $clr-bg-light;
+      padding: 0.5rem 0;
+    }
+    @include mq(desktop) {
+      font-size: $fs-800;
+      padding: 1rem 0;
+    }
+    @include mq(desktoplg) {
+      font-size: $fs-900;
+      padding: 1.5rem 0;
     }
   }
 
@@ -35,13 +61,59 @@
     @media screen and (min-width: 450px) {
       max-width: 20rem;
     }
+
+    @include mq(tablet) {
+      color: $clr-bg-light;
+    }
+    @include mq(desktop) {
+      font-size: $fs-600;
+      max-width: 28rem;
+    }
+    @include mq(desktoplg) {
+      font-size: $fs-700;
+    }
+  }
+
+  @include mq(tablet) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
+      url("../../public/img/hero/hero-800w.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+  }
+  @include mq(desktop) {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
+      url("../../public/img/hero/hero-1440w.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+  }
+  @include mq(desktoplg) {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)),
+      url("../../public/img/hero/hero-2200w.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
   }
 }
 
-// Step section
+.hero__btn,
+.hero__btn:hover {
+  @include mq(tablet) {
+    box-shadow: none;
+  }
+}
+
+/* ******************************** */
+/*           Step section           */
+/* ******************************** */
 
 .step-section {
   padding: 1rem;
+
+  @include mq(desktop) {
+    padding: 3.5rem 1rem;
+  }
 
   .step-section-title {
     align-self: flex-start;
@@ -63,16 +135,23 @@
       flex-direction: row;
       max-width: 1340px;
       gap: 2rem;
-      justify-content: space-evenly;
+      justify-content: center;
     }
   }
 }
 
-// restaurant section
+/* ******************************** */
+/*       Restaurant section         */
+/* ******************************** */
+
 .rest-section {
   padding: 1.2rem;
   padding-bottom: 3rem;
   background-color: $clr-bg-light;
+
+  @include mq(tablet) {
+    padding-bottom: 4rem;
+  }
 
   .rest-section-title {
     padding-top: 2.3rem;
