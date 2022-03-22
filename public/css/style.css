@@ -58,7 +58,9 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.header-logo, .footer__logo {
+.header-logo,
+.footer__logo,
+.menu__title {
   font-family: "Shrikhand", "Roboto", sans-serif;
 }
 
@@ -843,13 +845,8 @@ body {
 }
 .menu__favorite-btn {
   position: absolute;
-  top: 0;
-  right: 0;
-}
-@media screen and (max-width: 368px) {
-  .menu__favorite-btn {
-    top: 2rem;
-  }
+  top: -0.3rem;
+  right: -0.1rem;
 }
 .menu__order-btn {
   padding-top: 2rem;

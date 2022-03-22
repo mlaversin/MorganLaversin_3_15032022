@@ -35,22 +35,16 @@
 
   &__favorite-btn {
     position: absolute;
-    top: 0;
-    right: 0;
-
-    @media screen and (max-width: 368px) {
-      top: 2rem;
-    }
+    top: -0.3rem;
+    right: -0.1rem;
   }
 
   &__order-btn {
-      padding-top: 2rem;
-      display: grid;
-      place-items: center;
+    padding-top: 2rem;
+    display: grid;
+    place-items: center;
   }
 }
-
-
 
 .menu-step-title {
   position: relative;
@@ -61,7 +55,7 @@
   font-weight: $fw-regular;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     bottom: -0.6rem;
@@ -70,7 +64,6 @@
     background-color: $clr-tertiary;
   }
 }
-
 
 /* ******************************** */
 /*          Media Queries          */

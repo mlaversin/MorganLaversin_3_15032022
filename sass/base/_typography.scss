@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800&family=Shrikhand&display=swap");
 
 :root {
-    font-size: 100%;
-  }
+  font-size: 100%;
+}
 
 body {
   font-family: $ff-regular;
 }
 
-.header-logo, .footer__logo {
+.header-logo,
+.footer__logo,
+.menu__title {
   font-family: $ff-logo;
 }
-
