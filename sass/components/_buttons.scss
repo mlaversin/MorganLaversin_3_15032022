@@ -43,7 +43,6 @@
   }
 }
 
-
 /* ******************************** */
 /*         Favorite button         */
 /* ******************************** */
@@ -55,7 +54,7 @@
   cursor: pointer;
   z-index: 5;
   @include flex-row;
-  
+
   &__icon {
     position: absolute;
     font-size: $fs-700;
@@ -80,7 +79,7 @@
     }
     .favorite-btn__icon--checked {
       transform: scale(0);
-      animation: favorite 150ms ease-out 150ms both;
+      animation: favorite 350ms ease-out 200ms both;
     }
   }
 }
